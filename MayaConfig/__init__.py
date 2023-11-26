@@ -21,7 +21,7 @@ bl_info = {
     "name" : "MayaConfig",
     "author" : "euph",
     "description" : "Maya快捷键",
-    "blender" : (3, 51, 0),
+    "blender" : (4, 0, 1),
     "version" : (0, 0, 1),
     "location" : "",
     "warning" : "",
@@ -67,7 +67,7 @@ class MayaBlender_OT_Config(bpy.types.Operator):
            wm = bpy.context.window_manager
            kc = wm.keyconfigs.user
            #启用设置
-           context.preferences.view.language='zh_CN'
+           context.preferences.view.language='zh_HANS'
            context.preferences.view.use_translate_interface=True
            context.preferences.view.show_tooltips_python=True
            context.preferences.view.show_tooltips=True
